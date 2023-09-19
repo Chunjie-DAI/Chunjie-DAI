@@ -1,0 +1,4 @@
+baseURL = 'https://chunjie-dai.github.io/'
+languageCode = 'en-fi'
+title = 'Chunjie Dai'
+theme = 'ananke'
