@@ -29,18 +29,18 @@
 
     
     
-      <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Chunjie Dai" />
-      <link href="/index.xml" rel="feed" type="application/rss+xml" title="Chunjie Dai" />
+      <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Chunjie Dai" />
+      <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Chunjie Dai" />
       
     
     
-    <meta property="og:title" content="Chunjie Dai" />
+    <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://chunjie-dai.github.io/" />
-<meta itemprop="name" content="Chunjie Dai">
+<meta property="og:url" content="https://chunjie-dai.github.io/posts/" />
+<meta itemprop="name" content="Posts">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Chunjie Dai"/>
+<meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
 	
@@ -74,7 +74,7 @@
 
       <div class="tc-l pv3 ph3 ph4-ns">
         <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Chunjie Dai
+          Posts
         </h1>
         
       </div>
@@ -84,46 +84,21 @@
 
     <main class="pb7" role="main">
       
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
-  </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></section>
+    <section class="flex-ns flex-wrap justify-around mt5">
       
-       
-          <h1 class="flex-none">
-            Recent Posts
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/tips-of-matlab-simulink-2/" class="color-inherit dim link">
-            Tips of Matlab Simulink 2
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          最近做仿真遇到了要使用Zero-Order Hold 和Memory模块的情况，但是不是特别懂他们之间的区别，谷歌了 一下发现他们俩和有个类似的兄弟，Unit Delay模块，于是索性写个写个文档总结一下。
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/tips-of-matlab-simulink-2/" class="link black dim">
+        Tips of Matlab Simulink 2
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      最近做仿真遇到了要使用Zero-Order Hold 和Memory模块的情况，但是不是特别懂他们之间的区别，谷歌了 一下发现他们俩和有个类似的兄弟，Unit Delay模块，于是索性写个写个文档总结一下。
 问题描述： 如何区分Zero-Order Hold，Memory和Unit Delay模块并正确使用。
 解答： 首先我们来看下这三个模块长什么样，如图一所示，自上而下分别是Zero-Order Hold，Unit Delay和Memory模块，输入为一正弦波信号，周期为2s。 Fig.1 Model comparison
 Zero-Order Hold：如字面意思，零阶保持器，可以理解为降频采样器，他会在每到sample time的时候对输入进行采样并输出出去，这个值将保持到下一个sample time到来，这就达到了一个降频采样的效果，该模型sampletime设为0.1s，输出如下： Fig.2 ZOH wave
@@ -131,94 +106,76 @@ Unit Delay: 单位延时，将输入信号延时一个sample time，每个sample
 Memory：记忆？这个模块其实和Unit Delay很类似，都是实现延迟离散化效果，而Memory的不同是它的sample time是和Simulink solver的运算步长有关系的，根据帮助文档的说明，该模型将把信号延迟一个主积分时间步，据测试发现，信号将被延迟一个Max Step Size。这里将Max Step Size设置为0.001s，波形如下，放大后可看到1秒时确实延时了0.001s，而另外两个模块的输出不变。 Fig. 4 Memory wave
 Fig. 5 Partial memory wave
 🐟🐟🐟
-        </div>
-          <a href="/posts/tips-of-matlab-simulink-2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
+        </div>
       
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/" class="color-inherit dim link">
-            如何平衡工作学习和生活
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          我是一个很奇怪的人，明明很普通，但却有很多事情想去做，想去尝试，并且想要都做得很好，虽然已经25岁了，但我还是想吃，想玩，想做很多有趣的事，想变成天上一片忽明忽暗的云，我曾一度觉得只要我足够努力，凭我的聪明才智没有什么事做不成的，如果失败了那就是不够努力，我觉得什么都锤不了我。这种要求现在看来好像有点过分，但是也并不是完全做不到，只要我能像罗志祥一样成为一个时间管理大师合理规划好自己的时间，在不同的时间段和场合去处理不同的任务，总不至于什么都做不好。
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/" class="link black dim">
+        如何平衡工作学习和生活
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      我是一个很奇怪的人，明明很普通，但却有很多事情想去做，想去尝试，并且想要都做得很好，虽然已经25岁了，但我还是想吃，想玩，想做很多有趣的事，想变成天上一片忽明忽暗的云，我曾一度觉得只要我足够努力，凭我的聪明才智没有什么事做不成的，如果失败了那就是不够努力，我觉得什么都锤不了我。这种要求现在看来好像有点过分，但是也并不是完全做不到，只要我能像罗志祥一样成为一个时间管理大师合理规划好自己的时间，在不同的时间段和场合去处理不同的任务，总不至于什么都做不好。
 然而问题就在于我是一个很奇怪的人，即便问题没有出现，我也可以做到先天下之忧而忧，让自己陷入忧心忡忡的焦虑状态，不管我当时处于何种场合或状态，若是睡前在床上，好嘛那么妥妥的导致失眠，若是我是在做另一件事，那么我的这种焦虑会使我无法专注于手头的工作上，这十分可怕，我曾经还会有完美主义的倾向（现在治好了==），那么这些性质叠加在一起则会导致拖延症，想想就很要命。所以说我打心底里羡慕没心没肺的人，这里没有贬义，他们的快乐好像是与生俱来从心底里迸发出来的，他们是真正活在当下的人，难道他们很少会为过去和未来所牵绊吗？这我不得而知，不过我现在越来越知道过度焦虑会导致无法专注于当下等一系列恶果，并且这并不能够为改善未来提供什么益处，反而有害，这是我希望避免的。
 最近我和老友聊天，谈到了一件过于我的挺有意思的事情，这件事乍看起来只是我的自制力不强而已，但实质上是由于我的焦虑导致我无法专注与当下所导致的。事情是这样的，最近很长一段时间我都被睡前玩手机这一件事所困扰，每天睡前我都会控制不住自己去刷手机，手机变成了我入睡前接触的最后一样物品，玩手机变成了像是我的入睡仪式，这不仅会伤害我的眼睛，也导致我晚睡晚起，然后熬夜会导致脱发皮肤变差变胖，偶买噶我都不敢想，可是每天晚上我还是在义无反顾的玩手机，于是为了改掉这个习惯我打算在睡前把手机放在桌子上，绝对不把它拿到床上，从根本上解决这一问题，可是计划的执行需要监督，于是我将这件事告诉了我的好友，只要有另外一个人知道我的计划，我就不会自己骗自己了。这个问题究其原因其实是我的焦虑导致的，因为我每天学习时可能会因为别的事导致不够专注，效率下降，任务就有可能完不成或是陷入一种什么东西都没有学的自责中，因此我会延长学习时间来将其弥补回来，而这样就挤占了我做其他事情的时间，比如练琴，看书，练字，甚至放松，于是每天晚上我都会不由自主的希望抓紧最后睡前的一点点时间来让自己放松，这样可以暂时不用考虑明天的一堆糟心事，这算是一种逃避吧，恶果是连睡觉的时间都被挤占了，第二天的学习效率也会随之下降，这太糟糕了。
 类似的一件事，周末我的好友叫我去打球，我其实是很想去打的，因为我确实是需要运动的，并且我也很爱打网球，可是一想到学习我就不由自主的焦虑起来，我会想到我那些未完成的工作，要做仿真，写论文，找工作等等，可能别人正在努力学习呢我却跑出来玩，（深受内卷毒害😂），虽然我最后还是去打球了，可是忧愁它总围绕着我。。。朋友说你应该把学习和生活休闲分开，混在一起是很痛苦的，而他就可以把他们分的很开，每周规定一段时间要拿出来放松不搞学习的事情。我觉得在这一点上我需要向他学习。
 我需要更加专注于当前的事情，活在当下才能够脚踏实地的向前走，同时也不能够忘记向前看路，然后埋头赶路，如果走路时还在三心二意那么迟早要摔跤。说人话就是应该要制定合理的时间规划，然后执行每项计划式就不想那么多杂七杂八得了，专注力提升了才能有效率，有效率实践才能够节约出来，才能够有时间去做自己想做的事，活在当下才会给人满足感和充实感，否则一味地延长工作时间效率却很低实在是得不偿失。
 🐟🐟🐟
-        </div>
-          <a href="/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
+        </div>
       
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/tips-of-matlab-simulink-1/" class="color-inherit dim link">
-            Tips of Matlab Simulink 1
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/tips-of-matlab-simulink-1/" class="link black dim">
+        Tips of Matlab Simulink 1
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
 原因： MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示 而常见的信号线为Simulink中的数据流，为单向传输，模块端口和信号线头均为箭头，箭头方向表示信号传输方向，如上图中的g和m端口。
 信号线和电气线不能直接相连，不同库的电气线也不能直接相连。 而信号线中又有一种比较特殊的称为物理信号线，如下图所示，这种连接线的端口为三角箭头，物理信号线和simulink信号线同样不能直接相连。 解决办法： 1️⃣电气线与信号线相连：使用Voltage Measurement 或 Current Measurement，如下图 2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图 🐟🐟🐟
-        </div>
-          <a href="/posts/tips-of-matlab-simulink-1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
     </div>
   </div>
-</article>
+</div>
 
-          </div>
-        
-      </section>
-
+        </div>
       
-      <section class="w-100">
-        <h1 class="f3">More</h1>
-        
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/helloworld/" class="link black dim">
-              Hello World
-            </a>
-          </h2>
-        
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
+      <a href="/posts/helloworld/" class="link black dim">
+        Hello World
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      你好啊！ Hello！ Bonjour！ Moi！
+After so many trials with different instructions. This is my first post which is build with Github page and Hugo.
+Later I will update all my previous posts to this website and continue publishing new posts here.
+You can find more research logs and my personal blogs in the future.
+See you soon!
+:)
+    </div>
+  </div>
+</div>
 
-        
-        
-          <a href="/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
-        
-        </section>
+        </div>
       
-
-      </div>
-  
+    </section></article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

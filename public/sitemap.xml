@@ -2,9 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://chunjie-dai.github.io/categories/</loc>
-  </url><url>
     <loc>https://chunjie-dai.github.io/</loc>
+    <lastmod>2020-12-23T23:45:31+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/</loc>
+    <lastmod>2020-12-23T23:45:31+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/tips-of-matlab-simulink-2/</loc>
+    <lastmod>2020-12-23T23:45:31+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2020-12-12T22:55:31+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/tips-of-matlab-simulink-1/</loc>
+    <lastmod>2020-12-09T22:45:31+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/helloworld/</loc>
+    <lastmod>2020-11-27T09:19:54+03:00</lastmod>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/categories/</loc>
   </url><url>
     <loc>https://chunjie-dai.github.io/tags/</loc>
   </url>
