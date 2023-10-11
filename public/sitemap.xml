@@ -3,28 +3,74 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chunjie-dai.github.io/</loc>
-    <lastmod>2021-01-13T22:55:31+03:00</lastmod>
+    <lastmod>2021-09-04T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
-    <loc>https://chunjie-dai.github.io/posts/</loc>
-    <lastmod>2021-01-13T22:55:31+03:00</lastmod>
+    <loc>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%A4%A9%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%8E%E5%9C%B0%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</loc>
+    <lastmod>2021-09-04T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/%E4%B9%85%E8%BF%9D%E7%9A%84%E7%95%85%E5%BF%AB%E6%B7%8B%E6%BC%93%E7%9A%84%E9%98%85%E8%AF%BB%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81/</loc>
+    <lastmod>2021-08-23T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/%E5%85%B3%E4%BA%8E%E6%80%A7%E7%9A%84%E6%9A%B4%E5%8A%9B%E7%A9%B6%E7%AB%9F%E8%B0%81%E8%AF%A5%E4%B8%BA%E5%85%B6%E8%B4%9F%E8%B4%A3/</loc>
+    <lastmod>2021-02-07T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/%E4%BB%A4%E4%BA%BA%E5%94%8F%E5%98%98%E7%9A%84%E8%AE%A1%E5%88%92%E7%94%9F%E8%82%B2%E5%8F%B2%E8%9B%99/</loc>
+    <lastmod>2021-01-17T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/%E6%89%8B%E6%92%95%E6%B0%B8%E7%A3%81%E5%90%8C%E6%AD%A5%E7%94%B5%E6%9C%BA%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B/</loc>
     <lastmod>2021-01-13T22:55:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/tips-of-matlab-simulink-2/</loc>
     <lastmod>2020-12-23T23:45:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-12-12T22:55:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/tips-of-matlab-simulink-1/</loc>
     <lastmod>2020-12-09T22:45:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/helloworld/</loc>
     <lastmod>2020-11-27T09:19:54+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/</loc>
+    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
