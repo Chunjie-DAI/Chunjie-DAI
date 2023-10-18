@@ -5,6 +5,16 @@
     <link>https://chunjie-dai.github.io/tags/</link>
     <description>Recent content in Tags on Chunjie Dai</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-fi</language><atom:link href="https://chunjie-dai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-fi</language>
+    <lastBuildDate>Sat, 12 Dec 2020 22:55:31 +0300</lastBuildDate><atom:link href="https://chunjie-dai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Personal</title>
+      <link>https://chunjie-dai.github.io/tags/personal/</link>
+      <pubDate>Sat, 12 Dec 2020 22:55:31 +0300</pubDate>
+      
+      <guid>https://chunjie-dai.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

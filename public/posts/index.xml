@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Chunjie Dai</title>
+    <title>Posts on Chunjie Dai</title>
     <link>https://chunjie-dai.github.io/posts/</link>
-    <description>Recent content in Articles on Chunjie Dai</description>
+    <description>Recent content in Posts on Chunjie Dai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-fi</language>
-    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://chunjie-dai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Oct 2023 12:00:00 -0500</lastBuildDate><atom:link href="https://chunjie-dai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何实现天球坐标系与地球坐标系的相互转换？</title>
       <link>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%A4%A9%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%8E%E5%9C%B0%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</link>

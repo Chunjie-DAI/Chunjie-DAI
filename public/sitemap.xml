@@ -3,7 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://chunjie-dai.github.io/</loc>
-    <lastmod>2021-09-04T09:19:54+03:00</lastmod>
+    <lastmod>2023-10-18T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/</loc>
+    <lastmod>2023-10-18T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -37,6 +42,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://chunjie-dai.github.io/tags/personal/</loc>
+    <lastmod>2020-12-12T22:55:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/tags/</loc>
+    <lastmod>2020-12-12T22:55:31+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%B9%B3%E8%A1%A1%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2020-12-12T22:55:31+03:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,11 +67,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://chunjie-dai.github.io/posts/</loc>
-    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://chunjie-dai.github.io/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -66,10 +76,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://chunjie-dai.github.io/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
