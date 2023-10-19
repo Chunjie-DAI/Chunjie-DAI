@@ -6,9 +6,8 @@
     
     <title>Tips of Matlab Simulink 1 | Chunjie Dai</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
-原因： MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示 而常见的信号线为Simulink中的数据流，为单向传输，模块端口和信号线头均为箭头，箭头方向表示信号传输方向，如上图中的g和m端口。
-信号线和电气线不能直接相连，不同库的电气线也不能直接相连。 而信号线中又有一种比较特殊的称为物理信号线，如下图所示，这种连接线的端口为三角箭头，物理信号线和simulink信号线同样不能直接相连。 解决办法： 1️⃣电气线与信号线相连：使用Voltage Measurement 或 Current Measurement，如下图 2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图 🐟🐟🐟">
+    <meta name="description" content="问题描述：
+在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。">
     <meta name="generator" content="Hugo 0.118.2">
     
     
@@ -32,24 +31,21 @@
     
     
     <meta property="og:title" content="Tips of Matlab Simulink 1" />
-<meta property="og:description" content="问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
-原因： MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示 而常见的信号线为Simulink中的数据流，为单向传输，模块端口和信号线头均为箭头，箭头方向表示信号传输方向，如上图中的g和m端口。
-信号线和电气线不能直接相连，不同库的电气线也不能直接相连。 而信号线中又有一种比较特殊的称为物理信号线，如下图所示，这种连接线的端口为三角箭头，物理信号线和simulink信号线同样不能直接相连。 解决办法： 1️⃣电气线与信号线相连：使用Voltage Measurement 或 Current Measurement，如下图 2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图 🐟🐟🐟" />
+<meta property="og:description" content="问题描述：
+在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://chunjie-dai.github.io/posts/tips-of-matlab-simulink-1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2020-12-09T22:45:31+03:00" />
 <meta property="article:modified_time" content="2020-12-09T22:45:31+03:00" />
 <meta itemprop="name" content="Tips of Matlab Simulink 1">
-<meta itemprop="description" content="问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
-原因： MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示 而常见的信号线为Simulink中的数据流，为单向传输，模块端口和信号线头均为箭头，箭头方向表示信号传输方向，如上图中的g和m端口。
-信号线和电气线不能直接相连，不同库的电气线也不能直接相连。 而信号线中又有一种比较特殊的称为物理信号线，如下图所示，这种连接线的端口为三角箭头，物理信号线和simulink信号线同样不能直接相连。 解决办法： 1️⃣电气线与信号线相连：使用Voltage Measurement 或 Current Measurement，如下图 2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图 🐟🐟🐟"><meta itemprop="datePublished" content="2020-12-09T22:45:31+03:00" />
+<meta itemprop="description" content="问题描述：
+在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。"><meta itemprop="datePublished" content="2020-12-09T22:45:31+03:00" />
 <meta itemprop="dateModified" content="2020-12-09T22:45:31+03:00" />
 <meta itemprop="wordCount" content="25">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tips of Matlab Simulink 1"/>
-<meta name="twitter:description" content="问题描述： 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
-原因： MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示 而常见的信号线为Simulink中的数据流，为单向传输，模块端口和信号线头均为箭头，箭头方向表示信号传输方向，如上图中的g和m端口。
-信号线和电气线不能直接相连，不同库的电气线也不能直接相连。 而信号线中又有一种比较特殊的称为物理信号线，如下图所示，这种连接线的端口为三角箭头，物理信号线和simulink信号线同样不能直接相连。 解决办法： 1️⃣电气线与信号线相连：使用Voltage Measurement 或 Current Measurement，如下图 2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图 🐟🐟🐟"/>
+<meta name="twitter:description" content="问题描述：
+在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。"/>
 
 	
   </head>
@@ -165,7 +161,6 @@
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>问题描述：
 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。</p>
-<!-- raw HTML omitted -->
 <p>原因：
 MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中信号线又分为Physical Signal 和 Simulink Signal。
 电气线可以理解为电气回路中的连接线，没有方向，其中包含电压和电流信号，模块端口为方形，连出的电气线头为圆形，如下图所示
@@ -179,8 +174,7 @@ MATLAB/Simulink 中的连接线有很多种，有电气线和信号线，其中�
 <img src="/1629989241996.png" alt="3"></p>
 <p>2️⃣物理信号线与simulink信号线相连：使用PS-Simulink Converter 或 Simulink-PS Converter，如下图
 <img src="/1629989250702.png" alt="4"></p>
-<p>🐟🐟🐟</p>
-<ul class="pa0">
+<p>🐟🐟🐟</p><ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">

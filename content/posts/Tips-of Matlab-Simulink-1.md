@@ -9,7 +9,7 @@ draft = false
 问题描述：
 在使用MATLAB/Simulink时，将不同库的模块相连接，发现常常连不上。
 
-<!-- more -->
+<!--more-->
 
 
 原因：
