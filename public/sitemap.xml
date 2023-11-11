@@ -2,13 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://chunjie-dai.github.io/posts/categories-of-power-loss-in-pmsm/</loc>
+    <lastmod>2023-10-27T21:08:11+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://chunjie-dai.github.io/</loc>
-    <lastmod>2023-10-18T12:00:00-05:00</lastmod>
+    <lastmod>2023-10-27T21:08:11+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://chunjie-dai.github.io/posts/</loc>
     <lastmod>2023-10-18T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://chunjie-dai.github.io/posts/tips_of_pre-unit_system/</loc>
+    <lastmod>2023-08-26T20:08:11+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

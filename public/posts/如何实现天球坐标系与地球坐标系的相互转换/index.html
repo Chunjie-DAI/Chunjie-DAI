@@ -44,14 +44,15 @@
 最近的项目中遇到了需要将J2000天球坐标系中的位置转换为WGS-84地理坐标系中的经纬度的问题，在查了一些文献之后发现这其中最本质的问题在于如何实现天球坐标系与地球坐标系的转换，只要这个问题解决了，剩下的便可以迎刃而解了，在苦苦研究了一周多后，这个问题终于有了些眉目，于是抓紧写点东西梳理总结一下。
 "><meta itemprop="datePublished" content="2021-09-04T09:19:54+03:00" />
 <meta itemprop="dateModified" content="2021-09-04T09:19:54+03:00" />
-<meta itemprop="wordCount" content="306">
+<meta itemprop="wordCount" content="311">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何实现天球坐标系与地球坐标系的相互转换？"/>
 <meta name="twitter:description" content="
 最近的项目中遇到了需要将J2000天球坐标系中的位置转换为WGS-84地理坐标系中的经纬度的问题，在查了一些文献之后发现这其中最本质的问题在于如何实现天球坐标系与地球坐标系的转换，只要这个问题解决了，剩下的便可以迎刃而解了，在苦苦研究了一周多后，这个问题终于有了些眉目，于是抓紧写点东西梳理总结一下。
 "/>
 
-	
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -206,11 +207,11 @@
 <h2 id="11-岁差">1.1 岁差</h2>
 <p>假设地球是一个均匀椭球体，在空间中绕太阳沿着黄道公转，同时绕自身转轴自转，当太阳的引力作用在地球上时，由于地球并非一个标准的圆球，引力在地球靠近赤道附近凸出来的椭球部分产生了不对称的力偶，这样地球除了自转之外，其自转轴自身还会产生缓慢的进动，简化来看，地球自转轴绕着黄极做缓慢的圆周运动，两者之间的夹角便是黄赤交角，旋转周期是25800年，这种运动称为<strong>岁差</strong>。</p>
 <p>但实际上除了太阳对地球的引力影响，其他星体对地球的运动也会产生影响，比如月球和其他行星，这些引力影响都会使得地球的自转轴产生偏移，这样真实的地球自转轴（或者说天极）在绕着黄极做圆周运动的同时还在像波纹一样波动，为了便于说明，我们定义两种天极，一个是平天极，他围绕着黄极做圆周运动，只考虑太阳引力造成的影响，另一个是真天极，他围绕着平天极做椭圆运动，周期是18.6年。平天极绕黄极做的运动称为<strong>日月岁差</strong>，而真天极绕平天极做的运动称为<strong>章动</strong>，章动我们在下一节将会说明。</p>
-<p>接下来要关注的是如何描述岁差角，IERS给出了计算公式如下：
-$$
+<p>接下来要关注的是如何描述岁差角，IERS给出了计算公式如下：</p>
+<p>$$
 \begin{cases}
-\zeta_A = 2306&rsquo;&rsquo;.2181T + 0&rsquo;&rsquo;.30188T^2 + 0&rsquo;&rsquo;.017998T^3\
-\theta_A = 2004&rsquo;&rsquo;.3109T - 0&rsquo;&rsquo;.42665T^2 - 0&rsquo;&rsquo;.041833T^3\
+\zeta_A = 2306&rsquo;&rsquo;.2181T + 0&rsquo;&rsquo;.30188T^2 + 0&rsquo;&rsquo;.017998T^3\\
+\theta_A = 2004&rsquo;&rsquo;.3109T - 0&rsquo;&rsquo;.42665T^2 - 0&rsquo;&rsquo;.041833T^3\\
 z_A = 2306&rsquo;&rsquo;.2181T + 1&rsquo;&rsquo;.09468T^2 + 0&rsquo;&rsquo;.018203T^3
 \end{cases}
 $$
@@ -221,7 +222,7 @@ $$
 <p>目前采用最多的计算方法是依据IAU 1980  章动序列，它是由IAU（国际天文学联合会）在关于章动理论报告中给出的这两个章动角的展开式及展开系数，各有106项，一般精度要求不高的情况下可以取其中前20项，展开式如下：
 $$
 \begin{cases}
-Δψ = \sum_{j=1}^{20} \left(A_{0j}+A_{1j}t\right)sin\left(\sum_{i=1}^5k_{ji}\alpha_i(t)\right)\
+Δψ = \sum_{j=1}^{20} \left(A_{0j}+A_{1j}t\right)sin\left(\sum_{i=1}^5k_{ji}\alpha_i(t)\right)\\
 Δε = \sum_{j=1}^{20} \left(B_{0j}+B_{1j}t\right)cos\left(\sum_{i=1}^5k_{ji}\alpha_i(t)\right)
 \end{cases}
 $$
@@ -241,46 +242,52 @@ $$
 GMST = 18.6973746 + 879000.0513367T + 0.093104T^2
 $$
 注意时间和角度的转换关系为1h = 15degree</p>
-<p>而$\Delta \mu$为赤经章动$\Delta \mu = \Delta \psi cos\epsilon$</p>
+<p>而$$\Delta \mu$$为赤经章动$$\Delta \mu = \Delta \psi cos\epsilon$$</p>
 <p>平黄赤交角计算公式为
 $$
-\epsilon = 23\degree 26'21&rsquo;&rsquo; .448 - 46&rsquo;&rsquo;.8150t
+\epsilon = 23\deg 26'21&rsquo;&rsquo; .448 - 46&rsquo;&rsquo;.8150t
 $$
 T 为当前时刻相对于历元J2000过去的儒略世纪数。</p>
 <h1 id="2-坐标系转换">2 坐标系转换</h1>
 <p>综合以上四种转换就可以将一个在J2000天球坐标系中的矢量转换的地心地固坐标系中，下面给出具体转换矩阵供参考，其中所要用到的参数在上一章中都可以找到。</p>
-<p>用$\vec r$表示J2000坐标系中的矢量，用$\vec R$表示转换后在地固坐标系的矢量，则有
+<p>用$$\vec r$$表示J2000坐标系中的矢量，用$$\vec R$$表示转换后在地固坐标系的矢量，则有
 $$
 \vec R = (HG)\vec r
 $$
 其中转换矩阵HG四个转换矩阵，分别是岁差PR，章动NR，地球自转ER和极移EP，这几个矩阵均由基础的旋转矩阵构成
 $$
-PR = R_z(-z_A)R_y(\theta_A)R_z(\zeta_A)\
-NR = R_x(-\Delta \epsilon)R_y(\Delta \theta)R_z(-\Delta \mu)\
-ER = R_z(GAST)\
+\begin{cases}
+PR = R_z(-z_A)R_y(\theta_A)R_z(\zeta_A)\\
+NR = R_x(-\Delta \epsilon)R_y(\Delta \theta)R_z(-\Delta \mu)\\
+ER = R_z(GAST)\\
 EP = R_y(-x_p)R_x(y_p)
+\end{cases}
 $$
-其中，$\Delta \theta$为赤纬章动$\Delta \theta = \Delta \psi sin\epsilon$
+其中，$$\Delta \theta$$为赤纬章动$$\Delta \theta = \Delta \psi sin\epsilon$$
 而涉及到的旋转矩阵定义如下
 $$
 R_x(\theta) =
 \begin{bmatrix}
-1 &amp; 0 &amp; 0 \
-0 &amp; cos\theta &amp; sin\theta \
-0 &amp; -sin\theta &amp; cos\theta \
-\end{bmatrix}\</p>
-<p>R_y(\theta) =
+1 &amp; 0 &amp; 0 \\
+0 &amp; cos\theta &amp; sin\theta \\
+0 &amp; -sin\theta &amp; cos\theta
+\end{bmatrix}
+$$
+$$
+R_y(\theta) =
 \begin{bmatrix}
-cos\theta &amp; 0 &amp; -sin\theta \
-0 &amp; 1 &amp; 0 \
-sin\theta &amp; 0 &amp; cos\theta \
-\end{bmatrix}\</p>
-<p>R_z(\theta) =
+cos\theta &amp; 0 &amp; -sin\theta \\
+0 &amp; 1 &amp; 0 \\
+sin\theta &amp; 0 &amp; cos\theta \\
+\end{bmatrix}
+$$</p>
+<p>$$
+R_z(\theta) =
 \begin{bmatrix}
-cos\theta &amp; sin\theta &amp; 0 \
--sin\theta &amp; cos\theta &amp; 0 \
-0 &amp; 0 &amp; 1 \
-\end{bmatrix}\
+cos\theta &amp; sin\theta &amp; 0 \\
+-sin\theta &amp; cos\theta &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+\end{bmatrix}
 $$</p>
 <p>到此为止基本就可以完成J2000天球坐标系与地心地固坐标系之间的转换，这里介绍的转换方法是基于IAU 1980 规范下的，另外还有基于IAU 2000 规范的转换方法，两种的差别不是很大，在相关文献中均可以查阅到。</p>
 <h1 id="参考">参考</h1>

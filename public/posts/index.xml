@@ -8,6 +8,26 @@
     <language>en-fi</language>
     <lastBuildDate>Wed, 18 Oct 2023 12:00:00 -0500</lastBuildDate><atom:link href="https://chunjie-dai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Categories of power loss in PMSM</title>
+      <link>https://chunjie-dai.github.io/posts/categories-of-power-loss-in-pmsm/</link>
+      <pubDate>Fri, 27 Oct 2023 21:08:11 +0200</pubDate>
+      
+      <guid>https://chunjie-dai.github.io/posts/categories-of-power-loss-in-pmsm/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Our objective is to improve the efficiency while running the motor. In this report, it is mainly the permanent magnet synchronous machine (PMSM). In other words, we want to reduce the power loss. To answer this question, we need to figure out how these losses generated during working process and how to classify them.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Tips of pre-unit system</title>
+      <link>https://chunjie-dai.github.io/posts/tips_of_pre-unit_system/</link>
+      <pubDate>Sat, 26 Aug 2023 20:08:11 +0200</pubDate>
+      
+      <guid>https://chunjie-dai.github.io/posts/tips_of_pre-unit_system/</guid>
+      <description>How to utilize per-unit system in MTPA? Define base current and base torque as below, Then the per-unit value of current and torque can be derived, 🐟🐟🐟</description>
+    </item>
+    
+    <item>
       <title>如何实现天球坐标系与地球坐标系的相互转换？</title>
       <link>https://chunjie-dai.github.io/posts/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%A4%A9%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E4%B8%8E%E5%9C%B0%E7%90%83%E5%9D%90%E6%A0%87%E7%B3%BB%E7%9A%84%E7%9B%B8%E4%BA%92%E8%BD%AC%E6%8D%A2/</link>
       <pubDate>Sat, 04 Sep 2021 09:19:54 +0300</pubDate>
